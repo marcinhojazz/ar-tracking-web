@@ -11,7 +11,9 @@ function App() {
     <div className="App">
       {/* <Navbar />
       <Hero /> */}
-      <ArTracking />
+      <div className='h-screen w-full'>
+        <ArTracking />
+      </div>
     </div>
   )
 }

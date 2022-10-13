@@ -4,17 +4,20 @@ import ArTracking from './components/ArTracking'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+  const ref = useRef();
+  const [start, setStart] = useState(false);
+  const [marker, setMarker] = useState(false);
+
+  function handlePlayButton() {
+    let setDisplay = !start;
+    setPlay(setDisplay);
+  }
 
   return (
-    <div className="App">
-      {/* <Navbar />
-      <Hero /> */}
-      <div className='h-screen w-full'>
-        <ArTracking />
-      </div>
-    </div>
+    <>
+    
+    </>
   )
 }
 
